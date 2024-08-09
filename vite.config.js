@@ -14,6 +14,7 @@ export default defineConfig({
             main: path.resolve(__dirname, "index.html"),
             vacancies: path.resolve(__dirname, "src/html/pages/vacancies/index.html"),
             photos: path.resolve(__dirname, "src/html/pages/photos/index.html"),
+            anonces: path.resolve(__dirname, "src/html/pages/anonces/index.html"),
          },
       },
    },
