@@ -29,12 +29,12 @@ if (document.querySelectorAll("[data-tr]").length) {
          vacancyTitle: "do you want to get a job with us",
          vacancyBtn: "job vacancies",
 
-         headliner1: `Headliner of the evening <br> the best DJ in France, on the bill <br> who has two full-length records, his own party in <br> Paris and the Radio Show - DAVID VENDETTA`,
-         headliner2: `Headliner of the evening <br> the best DJ in France, on the bill <br> who has two full-length records, his own party in <br> Paris and the Radio Show - DAVID VENDETTA`,
-         headliner3: `Headliner of the evening <br> the best DJ in France, on the bill <br> who has two full-length records, his own party in <br> Paris and the Radio Show - DAVID VENDETTA`,
-         headliner4: `Headliner of the evening <br> the best DJ in France, on the bill <br> who has two full-length records, his own party in <br> Paris and the Radio Show - DAVID VENDETTA`,
-         headliner5: `Headliner of the evening <br> the best DJ in France, on the bill <br> who has two full-length records, his own party in <br> Paris and the Radio Show - DAVID VENDETTA`,
-         headliner6: `Headliner of the evening <br> the best DJ in France, on the bill <br> who has two full-length records, his own party in <br> Paris and the Radio Show - DAVID VENDETTA`,
+         headliner1: `Headliner of the evening the best DJ in France, on the bill who has two full-length records, his own party in Paris and the Radio Show - DAVID VENDETTA`,
+         headliner2: `Headliner of the evening the best DJ in France, on the bill who has two full-length records, his own party in Paris and the Radio Show - DAVID VENDETTA`,
+         headliner3: `Headliner of the evening the best DJ in France, on the bill who has two full-length records, his own party in Paris and the Radio Show - DAVID VENDETTA`,
+         headliner4: `Headliner of the evening the best DJ in France, on the bill who has two full-length records, his own party in Paris and the Radio Show - DAVID VENDETTA`,
+         headliner5: `Headliner of the evening the best DJ in France, on the bill who has two full-length records, his own party in Paris and the Radio Show - DAVID VENDETTA`,
+         headliner6: `Headliner of the evening the best DJ in France, on the bill who has two full-length records, his own party in Paris and the Radio Show - DAVID VENDETTA`,
 
          anonceDate1: `August 15th <br> at @6/45 <br> Gathering of guests – 23:00`,
          anonceDate2: `August 15th <br> at @6/45 <br> Gathering of guests – 23:00`,
@@ -43,7 +43,7 @@ if (document.querySelectorAll("[data-tr]").length) {
          anonceDate5: `August 15th <br> at @6/45 <br> Gathering of guests – 23:00`,
          anonceDate6: `August 15th <br> at @6/45 <br> Gathering of guests – 23:00`,
 
-         anonceAddress: `Dostyrk 123 <br> Reserve: 8-123-123-1234`,
+         anonceAddress: `Dostyrk 123 <br> Reserve: <a href="tel:81231231234"> 8-123-123-1234</a>`,
 
          search: "Search",
 
@@ -72,12 +72,12 @@ if (document.querySelectorAll("[data-tr]").length) {
          vacancyTitle: "хотите устроится к нам на работу",
          vacancyBtn: "вакансии",
 
-         headliner1: `Headliner вечера <br> лучший ди-джей Франции, на счету <br> которого две полноформатные пластинки, <br> собственная вечеринка в <br> Париже и радиошоу - DAVID VENDETTA`,
-         headliner2: `Headliner вечера <br> лучший ди-джей Франции, на счету <br> которого две полноформатные пластинки, <br> собственная вечеринка в <br> Париже и радиошоу - DAVID VENDETTA`,
-         headliner3: `Headliner вечера <br> лучший ди-джей Франции, на счету <br> которого две полноформатные пластинки, <br> собственная вечеринка в <br> Париже и радиошоу - DAVID VENDETTA`,
-         headliner4: `Headliner вечера <br> лучший ди-джей Франции, на счету <br> которого две полноформатные пластинки, <br> собственная вечеринка в <br> Париже и радиошоу - DAVID VENDETTA`,
-         headliner5: `Headliner вечера <br> лучший ди-джей Франции, на счету <br> которого две полноформатные пластинки, <br> собственная вечеринка в <br> Париже и радиошоу - DAVID VENDETTA`,
-         headliner6: `Headliner вечера <br> лучший ди-джей Франции, на счету <br> которого две полноформатные пластинки, <br> собственная вечеринка в <br> Париже и радиошоу - DAVID VENDETTA`,
+         headliner1: `Headliner вечера лучший ди-джей Франции, на счету которого две полноформатные пластинки, собственная вечеринка в Париже и радиошоу - DAVID VENDETTA`,
+         headliner2: `Headliner вечера лучший ди-джей Франции, на счету которого две полноформатные пластинки, собственная вечеринка в Париже и радиошоу - DAVID VENDETTA`,
+         headliner3: `Headliner вечера лучший ди-джей Франции, на счету которого две полноформатные пластинки, собственная вечеринка в Париже и радиошоу - DAVID VENDETTA`,
+         headliner4: `Headliner вечера лучший ди-джей Франции, на счету которого две полноформатные пластинки, собственная вечеринка в Париже и радиошоу - DAVID VENDETTA`,
+         headliner5: `Headliner вечера лучший ди-джей Франции, на счету которого две полноформатные пластинки, собственная вечеринка в Париже и радиошоу - DAVID VENDETTA`,
+         headliner6: `Headliner вечера лучший ди-джей Франции, на счету которого две полноформатные пластинки, собственная вечеринка в Париже и радиошоу - DAVID VENDETTA`,
 
          anonceDate1: `15 августа <br> в @6/45 <br> Сбор гостей – 23:00`,
          anonceDate2: `15 августа <br> в @6/45 <br> Сбор гостей – 23:00`,
@@ -86,7 +86,7 @@ if (document.querySelectorAll("[data-tr]").length) {
          anonceDate5: `15 августа <br> в @6/45 <br> Сбор гостей – 23:00`,
          anonceDate6: `15 августа <br> в @6/45 <br> Сбор гостей – 23:00`,
 
-         anonceAddress: `Достык 123 <br> Забронировать: 8-123-123-1234`,
+         anonceAddress: `Достык 123 <br> Забронировать: <a href="tel:81231231234"> 8-123-123-1234</a>`,
 
          search: "Поиск",
 
@@ -99,6 +99,49 @@ if (document.querySelectorAll("[data-tr]").length) {
          vacancy1: "Требуется SMM менеджер!",
          vacancy2: "Требуется SMM менеджер!",
          vacancy3: "Требуется SMM менеджер!",
+      },
+      kz: {
+         a1: "фото",
+         a2: "хабарландырулар",
+         a3: "мекемелер",
+         a4: "байланыс",
+
+         phoneNumber: "телефон нөмірі",
+         whatsapp: "WHATSAPP АРҚЫЛЫ",
+         email: "БІЗДІҢ E-MAIL",
+         instagram: "БІЗДІҢ INSTAGRAM",
+
+         photoReportTitle: "Фото тапсырыс беріңіз",
+         vacancyTitle: "бізге жұмысқа орналасқыңыз келе ме",
+         vacancyBtn: "бос жұмыс орындары",
+
+         headliner1: `Headliner түндері Францияның ең жақсы диджейі, оның екі толық метражды жазбасы, Париждегі Жеке кеші және радио шоуы - Дэвид Вендетта`,
+         headliner2: `Headliner түндері Францияның ең жақсы диджейі, оның екі толық метражды жазбасы, Париждегі Жеке кеші және радио шоуы - Дэвид Вендетта`,
+         headliner3: `Headliner түндері Францияның ең жақсы диджейі, оның екі толық метражды жазбасы, Париждегі Жеке кеші және радио шоуы - Дэвид Вендетта`,
+         headliner4: `Headliner түндері Францияның ең жақсы диджейі, оның екі толық метражды жазбасы, Париждегі Жеке кеші және радио шоуы - Дэвид Вендетта`,
+         headliner5: `Headliner түндері Францияның ең жақсы диджейі, оның екі толық метражды жазбасы, Париждегі Жеке кеші және радио шоуы - Дэвид Вендетта`,
+         headliner6: `Headliner түндері Францияның ең жақсы диджейі, оның екі толық метражды жазбасы, Париждегі Жеке кеші және радио шоуы - Дэвид Вендетта`,
+      
+         anonceDate1: `15 тамыз <br> @6/45 <br> Қонақтарды жинау – 23:00`,
+         anonceDate2: `15 тамыз <br> @6/45 <br> Қонақтарды жинау – 23:00`,
+         anonceDate3: `15 тамыз <br> @6/45 <br> Қонақтарды жинау – 23:00`,
+         anonceDate4: `15 тамыз <br> @6/45 <br> Қонақтарды жинау – 23:00`,
+         anonceDate5: `15 тамыз <br> @6/45 <br> Қонақтарды жинау – 23:00`,
+         anonceDate6: `15 тамыз <br> @6/45 <br> Қонақтарды жинау – 23:00`,
+
+         anonceAddress: `Достық 123 <br> Брондау: <a href="tel:81231231234"> 8-123-123-1234</a>`,
+
+         search: "Іздеу",
+
+         infoBtn: "инфо",
+
+         allWorksBtn: "барлық фотосуреттерді қарау",
+
+         vacanciesText: "Түйіндеме мен сіздің Портфолиоңызды біздің электрондық поштаға жіберуіңізді сұраймыз:",
+
+         vacancy1: "SMM менеджері қажет!",
+         vacancy2: "SMM менеджері қажет!",
+         vacancy3: "SMM менеджері қажет!",
       },
    };
 
@@ -149,9 +192,11 @@ if (document.querySelectorAll("[data-tr]").length) {
    langSelector.addEventListener("click", (e) => {
       setLanguage(e.target.innerText);
       if (e.target.innerText === "ENGLISH") {
-         e.target.innerText = "русский";
+         e.target.innerText = "ҚАЗАҚША";
+      } else if (e.target.innerText === "ҚАЗАҚША") {
+         e.target.innerText = "РУССКИЙ";
       } else if (e.target.innerText === "РУССКИЙ") {
-         e.target.innerText = "english";
+         e.target.innerText = "ENGLISH";
       }
    });
 
@@ -299,7 +344,7 @@ if (document.querySelectorAll("[data-tr]").length) {
          if (headliner5) {
             headliner5.innerHTML = translations.ru.headliner5;
          }
-         if (headliner3) {
+         if (headliner6) {
             headliner6.innerHTML = translations.ru.headliner6;
          }
 
@@ -346,6 +391,102 @@ if (document.querySelectorAll("[data-tr]").length) {
          }
          if (vacancy3) {
             vacancy3.innerText = translations.ru.vacancy3;
+         }
+      }
+      if (language === "ҚАЗАҚША") {
+         menuLinks1.forEach((menuLink1) => (menuLink1.innerText = translations.kz.a1));
+         menuLinks2.forEach((menuLink2) => (menuLink2.innerText = translations.kz.a2));
+         menuLinks3.forEach((menuLink3) => (menuLink3.innerText = translations.kz.a3));
+         menuLinks4.forEach((menuLink4) => (menuLink4.innerText = translations.kz.a4));
+
+         searchInput.placeholder = translations.kz.search;
+
+         if (phoneNumber) {
+            phoneNumber.innerText = translations.kz.phoneNumber;
+         }
+         if (whatsapp) {
+            whatsapp.innerText = translations.kz.whatsapp;
+         }
+         if (email) {
+            email.innerText = translations.kz.email;
+         }
+         if (instagram) {
+            instagram.innerText = translations.kz.instagram;
+         }
+
+         if (photoReportTitle) {
+            photoReportTitle.innerText = translations.kz.photoReportTitle;
+         }
+         if (vacancyTitle) {
+            vacancyTitle.innerHTML = translations.kz.vacancyTitle;
+         }
+         if (vacancyBtns.length) {
+            // vacancyBtn.innerHTML = translations.ru.vacancyBtn;
+            vacancyBtns.forEach((btn) => (btn.innerText = translations.kz.vacancyBtn));
+         }
+
+         if (headliner1) {
+            headliner1.innerHTML = translations.kz.headliner1;
+         }
+         if (headliner2) {
+            headliner2.innerHTML = translations.kz.headliner2;
+         }
+         if (headliner3) {
+            headliner3.innerHTML = translations.kz.headliner3;
+         }
+         if (headliner4) {
+            headliner4.innerHTML = translations.kz.headliner4;
+         }
+         if (headliner5) {
+            headliner5.innerHTML = translations.kz.headliner5;
+         }
+         if (headliner6) {
+            headliner6.innerHTML = translations.kz.headliner6;
+         }
+
+         if (anonceDate1) {
+            anonceDate1.innerHTML = translations.kz.anonceDate1;
+         }
+         if (anonceDate2) {
+            anonceDate2.innerHTML = translations.kz.anonceDate2;
+         }
+         if (anonceDate2) {
+            anonceDate3.innerHTML = translations.kz.anonceDate3;
+         }
+         if (anonceDate4) {
+            anonceDate4.innerHTML = translations.kz.anonceDate4;
+         }
+         if (anonceDate5) {
+            anonceDate5.innerHTML = translations.kz.anonceDate5;
+         }
+         if (anonceDate6) {
+            anonceDate6.innerHTML = translations.kz.anonceDate6;
+         }
+
+         if (addresses.length) {
+            addresses.forEach((address) => (address.innerHTML = translations.kz.anonceAddress));
+         }
+
+         if (infoBtn) {
+            infoBtn.innerText = translations.kz.infoBtn;
+         }
+
+         if (allWorksBtn) {
+            allWorksBtn.innerText = translations.kz.allWorksBtn;
+         }
+
+         if (vacanciesText) {
+            vacanciesText.innerText = translations.kz.vacanciesText;
+         }
+
+         if (vacancy1) {
+            vacancy1.innerText = translations.kz.vacancy1;
+         }
+         if (vacancy2) {
+            vacancy2.innerText = translations.kz.vacancy2;
+         }
+         if (vacancy3) {
+            vacancy3.innerText = translations.kz.vacancy3;
          }
       }
    }
