@@ -56,6 +56,13 @@ if (document.querySelectorAll("[data-tr]").length) {
          vacancy1: "An SMM manager is required!",
          vacancy2: "An SMM manager is required!",
          vacancy3: "An SMM manager is required!",
+
+         datetime1: `August <br> <span>15th</span>`,
+         datetime2: `August <br> <span>15th</span>`,
+         datetime3: `August <br> <span>15th</span>`,
+         datetime4: `August <br> <span>15th</span>`,
+         datetime5: `August <br> <span>15th</span>`,
+         datetime6: `August <br> <span>15th</span>`,
       },
       ru: {
          a1: "фото",
@@ -99,6 +106,13 @@ if (document.querySelectorAll("[data-tr]").length) {
          vacancy1: "Требуется SMM менеджер!",
          vacancy2: "Требуется SMM менеджер!",
          vacancy3: "Требуется SMM менеджер!",
+
+         datetime1: `<span>15</span> <br />августа`,
+         datetime2: `<span>15</span> <br />августа`,
+         datetime3: `<span>15</span> <br />августа`,
+         datetime4: `<span>15</span> <br />августа`,
+         datetime5: `<span>15</span> <br />августа`,
+         datetime6: `<span>15</span> <br />августа`,
       },
       kz: {
          a1: "фото",
@@ -142,6 +156,13 @@ if (document.querySelectorAll("[data-tr]").length) {
          vacancy1: "SMM менеджері қажет!",
          vacancy2: "SMM менеджері қажет!",
          vacancy3: "SMM менеджері қажет!",
+
+         datetime1: `<span>15</span> <br />тамыз`,
+         datetime2: `<span>15</span> <br />тамыз`,
+         datetime3: `<span>15</span> <br />тамыз`,
+         datetime4: `<span>15</span> <br />тамыз`,
+         datetime5: `<span>15</span> <br />тамыз`,
+         datetime6: `<span>15</span> <br />тамыз`,
       },
    };
 
@@ -188,6 +209,13 @@ if (document.querySelectorAll("[data-tr]").length) {
    const vacancy1 = document.querySelector("[data-vacancy-1]");
    const vacancy2 = document.querySelector("[data-vacancy-2]");
    const vacancy3 = document.querySelector("[data-vacancy-3]");
+
+   const datetime1 = document.querySelector("[data-datetime-1]");
+   const datetime2 = document.querySelector("[data-datetime-2]");
+   const datetime3 = document.querySelector("[data-datetime-3]");
+   const datetime4 = document.querySelector("[data-datetime-4]");
+   const datetime5 = document.querySelector("[data-datetime-5]");
+   const datetime6 = document.querySelector("[data-datetime-6]");
 
    langSelectors.forEach((langSelector) => {
       langSelector.addEventListener("click", (e) => {
@@ -298,6 +326,25 @@ if (document.querySelectorAll("[data-tr]").length) {
          if (vacancy3) {
             vacancy3.innerText = translations.en.vacancy3;
          }
+
+         if (datetime1) {
+            datetime1.innerHTML = translations.en.datetime1;
+         }
+         if (datetime2) {
+            datetime2.innerHTML = translations.en.datetime2;
+         }
+         if (datetime3) {
+            datetime3.innerHTML = translations.en.datetime3;
+         }
+         if (datetime4) {
+            datetime4.innerHTML = translations.en.datetime4;
+         }
+         if (datetime5) {
+            datetime5.innerHTML = translations.en.datetime5;
+         }
+         if (datetime6) {
+            datetime6.innerHTML = translations.en.datetime6;
+         }
       }
       if (language === "РУССКИЙ") {
          menuLinks1.forEach((menuLink1) => (menuLink1.innerText = translations.ru.a1));
@@ -394,6 +441,25 @@ if (document.querySelectorAll("[data-tr]").length) {
          if (vacancy3) {
             vacancy3.innerText = translations.ru.vacancy3;
          }
+
+         if (datetime1) {
+            datetime1.innerHTML = translations.ru.datetime1;
+         }
+         if (datetime2) {
+            datetime2.innerHTML = translations.ru.datetime2;
+         }
+         if (datetime3) {
+            datetime3.innerHTML = translations.ru.datetime3;
+         }
+         if (datetime4) {
+            datetime4.innerHTML = translations.ru.datetime4;
+         }
+         if (datetime5) {
+            datetime5.innerHTML = translations.ru.datetime5;
+         }
+         if (datetime6) {
+            datetime6.innerHTML = translations.ru.datetime6;
+         }
       }
       if (language === "ҚАЗАҚША") {
          menuLinks1.forEach((menuLink1) => (menuLink1.innerText = translations.kz.a1));
@@ -489,6 +555,25 @@ if (document.querySelectorAll("[data-tr]").length) {
          }
          if (vacancy3) {
             vacancy3.innerText = translations.kz.vacancy3;
+         }
+
+         if (datetime1) {
+            datetime1.innerHTML = translations.kz.datetime1;
+         }
+         if (datetime2) {
+            datetime2.innerHTML = translations.kz.datetime2;
+         }
+         if (datetime3) {
+            datetime3.innerHTML = translations.kz.datetime3;
+         }
+         if (datetime4) {
+            datetime4.innerHTML = translations.kz.datetime4;
+         }
+         if (datetime5) {
+            datetime5.innerHTML = translations.kz.datetime5;
+         }
+         if (datetime6) {
+            datetime6.innerHTML = translations.kz.datetime6;
          }
       }
    }
