@@ -121,7 +121,7 @@ if (document.querySelectorAll("[data-tr]").length) {
          headliner4: `Headliner түндері Францияның ең жақсы диджейі, оның екі толық метражды жазбасы, Париждегі Жеке кеші және радио шоуы - Дэвид Вендетта`,
          headliner5: `Headliner түндері Францияның ең жақсы диджейі, оның екі толық метражды жазбасы, Париждегі Жеке кеші және радио шоуы - Дэвид Вендетта`,
          headliner6: `Headliner түндері Францияның ең жақсы диджейі, оның екі толық метражды жазбасы, Париждегі Жеке кеші және радио шоуы - Дэвид Вендетта`,
-      
+
          anonceDate1: `15 тамыз <br> @6/45 <br> Қонақтарды жинау – 23:00`,
          anonceDate2: `15 тамыз <br> @6/45 <br> Қонақтарды жинау – 23:00`,
          anonceDate3: `15 тамыз <br> @6/45 <br> Қонақтарды жинау – 23:00`,
@@ -145,7 +145,7 @@ if (document.querySelectorAll("[data-tr]").length) {
       },
    };
 
-   const langSelector = document.querySelector("[data-lang]");
+   const langSelectors = document.querySelectorAll("[data-lang]");
 
    const menuLinks1 = document.querySelectorAll("[data-menu-link-1]");
    const menuLinks2 = document.querySelectorAll("[data-menu-link-2]");
@@ -189,15 +189,17 @@ if (document.querySelectorAll("[data-tr]").length) {
    const vacancy2 = document.querySelector("[data-vacancy-2]");
    const vacancy3 = document.querySelector("[data-vacancy-3]");
 
-   langSelector.addEventListener("click", (e) => {
-      setLanguage(e.target.innerText);
-      if (e.target.innerText === "ENGLISH") {
-         e.target.innerText = "ҚАЗАҚША";
-      } else if (e.target.innerText === "ҚАЗАҚША") {
-         e.target.innerText = "РУССКИЙ";
-      } else if (e.target.innerText === "РУССКИЙ") {
-         e.target.innerText = "ENGLISH";
-      }
+   langSelectors.forEach((langSelector) => {
+      langSelector.addEventListener("click", (e) => {
+         setLanguage(e.target.innerText);
+         if (e.target.innerText === "ENGLISH") {
+            e.target.innerText = "ҚАЗАҚША";
+         } else if (e.target.innerText === "ҚАЗАҚША") {
+            e.target.innerText = "РУССКИЙ";
+         } else if (e.target.innerText === "РУССКИЙ") {
+            e.target.innerText = "ENGLISH";
+         }
+      });
    });
 
    function setLanguage(language) {
