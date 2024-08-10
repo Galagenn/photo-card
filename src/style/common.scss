@@ -463,3 +463,60 @@
 }
 
 }
+
+.anonces__block {
+   position: relative;
+   display: inline-block;
+
+   .block-overlay {
+       position: absolute;
+       z-index: 10;
+       background-size: contain;
+       background-repeat: no-repeat;
+
+       &.bottom-left-block {
+           bottom: 0;
+           left: 0;
+           width: 40%;
+           height: 30%;
+           background-image: url('/public/img/anonces/bottom-left-block.svg');
+       }
+
+       &.top-right-block {
+           top: 0;
+           right: 0;
+           width: 30%;
+           height: 20%;
+           background-image: url('/public/img/anonces/top-right-block.svg');
+       }
+   }
+}
+.anonces__block {
+    position: relative;
+    display: inline-block;
+
+    .block-overlay {
+        position: absolute;
+        z-index: 10;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &.bottom-left-block {
+            bottom: 0;
+            left: 0;
+            width: 110px;  // Длина нижнего блока
+            height: auto;  // Высота подстроится под пропорции изображения
+            background-image: url('/public/img/anonces/bottom-left-block.svg');
+        }
+
+        &.top-right-block {
+            top: 0;
+            right: 0;
+            width: 170px;  // Длина верхнего блока
+            height: auto;  // Высота подстроится под пропорции изображения
+            background-image: url('/public/img/anonces/top-right-block.svg');
+        }
+    }
+}
+
+

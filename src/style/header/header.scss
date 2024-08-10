@@ -154,12 +154,18 @@
    display: none;
    @media (max-width: toEm(767.98)) {
       display: block;
+      svg{
+         display: none;
+      }
    }
 
 }
 
-#bottom-header__color-mode__dark{
+.bottom-header__back-color{
    display: block;
+   @media (max-width: toEm(767.98)) {
+      display: none;
+   }
 }
 
 .bottom-header {
