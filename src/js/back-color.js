@@ -1,6 +1,6 @@
 // Функция для переключения на светлую тему
 let changeToLight = function(event) {
-  event.preventDefault(); // Отменить стандартное действие ссылки
+  if (event) event.preventDefault(); // Отменить стандартное действие ссылки
 
   // Изменение стилей для светлой темы
   document.body.style.backgroundColor = '#fff';
@@ -20,15 +20,9 @@ let changeToLight = function(event) {
 
   let menuBody = document.querySelector('.menu__body');
   if (menuBody) {
-    menuBody.style.setProperty('--menu-body-before-color', '#fff'); // Меняем цвет на черный
-
+    menuBody.style.backgroundColor = '#fff';
+    menuBody.style.color = '#000';
   }
-
-  let menuContainer = document.querySelectorAll('.menu__body');
-  menuContainer.forEach(function(element) {
-    element.style.backgroundColor = '#fff';
-    element.style.color = '#000';
-  });
 
   let wrappersToChange = document.querySelectorAll('.top-header__wrapper');
   wrappersToChange.forEach(function(wrapper) {
@@ -62,7 +56,7 @@ let changeToLight = function(event) {
     section.style.color = '#fff';
   });
 
-  let vacancySectionsToChange = document.querySelectorAll('.vacancy__title');
+  let vacancySectionsToChange = document.querySelectorAll('.vacancy__title, .vacancies__label, .vacancies__button');
   vacancySectionsToChange.forEach(function(section) {
     section.style.color = '#fff';
   });
@@ -84,12 +78,11 @@ let changeToLight = function(event) {
     modeLight.style.display = 'none';
   }
 
-  
-
-  let lineElement = document.querySelector('.photo-portal__title::before');
-  if (lineElement) {
-    lineElement.style.backgroundColor = '#000';
+  let menuModeLight = document.getElementById('menu-mode__light');
+  if (menuModeLight) {
+    menuModeLight.style.display = 'none';
   }
+
 
   // Отображение элемента .bottom-header__color-mode__dark
   let modeVisibleDark = document.querySelector('.bottom-header__color-mode__dark');
@@ -97,30 +90,20 @@ let changeToLight = function(event) {
     modeVisibleDark.style.display = 'block';
   }
 
-  let changeIconMenuBackgroundColor = function() {
-    let iconMenu = document.querySelector('.icon-menu');
-  
-    if (iconMenu) {
-      // Изменяем цвет фона для псевдоэлементов ::before и ::after
-      iconMenu.style.setProperty('--clr-white', '#000');
-      menuBody.style.setProperty('--menu-body-background-color', '#000');
-    }
-  };
-  
-  // Вызов функции
-  changeIconMenuBackgroundColor();
+  // Изменение стиля и фона для меню
+  let iconMenu = document.querySelector('.icon-menu');
+  if (iconMenu) {
+    iconMenu.style.setProperty('--clr-white', '#000');
+    menuBody.style.setProperty('--menu-body-background-color', '#000');
+  }
 
   // Сохранение состояния в localStorage
   localStorage.setItem('theme', 'light');
 };
 
-
-
-
-
 // Функция для переключения на темную тему
 let changeToDark = function(event) {
-  event.preventDefault(); // Отменить стандартное действие ссылки
+  if (event) event.preventDefault(); // Отменить стандартное действие ссылки
 
   // Возвращение стилей в исходное состояние для темной темы
   document.body.style.backgroundColor = '';
@@ -139,14 +122,9 @@ let changeToDark = function(event) {
 
   let menuBody = document.querySelector('.menu__body');
   if (menuBody) {
-    menuBody.style.setProperty('--menu-body-before-color', '#000'); // Возвращаем белый цвет
+    menuBody.style.backgroundColor = '';
+    menuBody.style.color = '';
   }
-
-  let menuContainer = document.querySelectorAll('.menu__body');
-  menuContainer.forEach(function(element) {
-    element.style.backgroundColor = '';
-    element.style.color = '';
-  });
 
   let wrappersToChange = document.querySelectorAll('.top-header__wrapper');
   wrappersToChange.forEach(function(wrapper) {
@@ -180,7 +158,7 @@ let changeToDark = function(event) {
     section.style.color = '';
   });
 
-  let vacancySectionsToChange = document.querySelectorAll('.vacancy__title');
+  let vacancySectionsToChange = document.querySelectorAll('.vacancy__title, .vacancies__label, .vacancies__button');
   vacancySectionsToChange.forEach(function(section) {
     section.style.color = '';
   });
@@ -190,11 +168,10 @@ let changeToDark = function(event) {
   if (modeLight) {
     modeLight.style.display = 'block';
   }
-  
-  
-  let lineElement = document.querySelector('.photo-portal__title::before');
-  if (lineElement) {
-    lineElement.style.backgroundColor = '';
+
+  let menuModeLight = document.getElementById('menu-mode__light');
+  if (menuModeLight) {
+    menuModeLight.style.display = 'block';
   }
 
   // Скрытие элемента .bottom-header__color-mode__dark
@@ -203,19 +180,17 @@ let changeToDark = function(event) {
     modeVisibleDark.style.display = 'none';
   }
 
-
   let burgerMenuToChange = document.querySelectorAll('.icon-menu__line');
   burgerMenuToChange.forEach(function(element) {
     element.style.backgroundColor = '';
   });
 
-  // Reset the background color of ::before and ::after pseudo-elements
+  // Возвращение стилей меню в исходное состояние
   let iconMenu = document.querySelector('.icon-menu');
   if (iconMenu) {
-    iconMenu.style.setProperty('--clr-white', '');
+    iconMenu.style.setProperty('--clr-white', '#fff');
+    menuBody.style.setProperty('--menu-body-background-color', '#000');
   }
-
-  changeIconMenuBackgroundColor();
 
   // Сохранение состояния в localStorage
   localStorage.setItem('theme', 'dark');
@@ -227,13 +202,12 @@ document.getElementById('mode__dark')?.addEventListener('click', changeToDark);
 document.getElementById('menu-mode__light')?.addEventListener('click', changeToLight);
 document.getElementById('menu-mode__dark')?.addEventListener('click', changeToDark);
 
-
 // Установка состояния при загрузке страницы
 window.addEventListener('load', function() {
   let theme = localStorage.getItem('theme');
   if (theme === 'light') {
-    changeToLight(new Event('load'));
+    changeToLight(null); // Вызываем функцию без события
   } else if (theme === 'dark') {
-    changeToDark(new Event('load'));
+    changeToDark(null); // Вызываем функцию без события
   }
 });
