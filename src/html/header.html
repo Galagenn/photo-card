@@ -2,27 +2,27 @@
    <div class="header__top top-header">
       <div class="top-header__container">
          <div class="top-header__wrapper">
-            <a href="/index.html" class="top-header__logo">
+            <a href="/" class="top-header__logo">
                <img src="/img/header/logo.jpeg" alt="logo" />
             </a>
             <nav class="top-header__menu menu">
                <div class="menu__body">
                   <ul class="menu__list">
                      <li class="menu__item">
-                        <a data-text="фото" href="/src/html/pages/photos/index.html" class="menu__link">фото</a>
+                        <a data-tr data-menu-link-1 data-text="фото" href="/src/html/pages/photos/" class="menu__link">фото</a>
                      </li>
                      <li class="menu__item">
-                        <a data-text="анонсы" href="/src/html/pages/anonces/index.html" class="menu__link">анонсы</a>
+                        <a data-tr data-menu-link-2 data-text="анонсы" href="/src/html/pages/anonces/" class="menu__link">анонсы</a>
                      </li>
                      <li class="menu__item">
-                        <a data-text="заведения" href="#" class="menu__link">заведения</a>
+                        <a data-tr data-menu-link-3 data-text="заведения" href="#" class="menu__link">заведения</a>
                      </li>
                      <li class="menu__item">
-                        <a data-text="контакты" href="#" class="menu__link">контакты</a>
+                        <a data-tr data-menu-link-4 data-text="контакты" href="#" class="menu__link">контакты</a>
                      </li>
                      <li class="menu__item menu__parameters">
                         <button type="button" class="menu-item top-header__language">
-                           <span>русский</span>
+                           <span data-lang>english</span>
                            <svg>
                               <use xlink:href="#arrow" />
                            </svg>
@@ -41,7 +41,7 @@
             </nav>
             <div class="top-header__actions">
                <button type="button" class="top-header__language language-second">
-                  <span>русский</span>
+                  <span data-lang>english</span>
                   <svg>
                      <use xlink:href="#arrow" />
                   </svg>
@@ -57,7 +57,7 @@
       <div class="bottom-header__container">
 
          <div class="bottom-header__wrapper">
-            <input type="search" placeholder="Поиск" class="bottom-header__input">
+            <input data-search type="search" placeholder="Поиск" class="bottom-header__input">
             <div class="bottom-header__back-color">
                <a href="№" id="mode__light" onclick="changeToLight(event)">
                   <img src="/public/img/header/light-mode.svg" alt="" class="bottom-header__color-mode__light">
