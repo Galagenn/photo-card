@@ -24,12 +24,13 @@ let changeToLight = function(event) {
     menuBody.style.color = '#000';
   }
 
-  let wrappersToChange = document.querySelectorAll('.top-header__wrapper');
+  let wrappersToChange = document.querySelectorAll('.bottom-header__wrapper');
   wrappersToChange.forEach(function(wrapper) {
+    wrapper.style.borderTop = '1px solid #000';
     wrapper.style.borderBottom = '1px solid #000';
   });
 
-  let titlesToChange = document.querySelectorAll('.slide-hero__time, .anonces__text-block');
+  let titlesToChange = document.querySelectorAll('.slide-hero__time');
   titlesToChange.forEach(function(title) {
     title.style.color = '#000';
   });
@@ -126,8 +127,9 @@ let changeToDark = function(event) {
     menuBody.style.color = '';
   }
 
-  let wrappersToChange = document.querySelectorAll('.top-header__wrapper');
+  let wrappersToChange = document.querySelectorAll('.bottom-header__wrapper');
   wrappersToChange.forEach(function(wrapper) {
+    wrapper.style.borderTop = '';
     wrapper.style.borderBottom = '';
   });
 
